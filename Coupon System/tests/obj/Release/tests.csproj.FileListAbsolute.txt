@@ -1,0 +1,16 @@
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\analysis_design.mdf
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\analysis_design_log.ldf
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\tests.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\tests.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\DataBase.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\nunit.framework.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\nunit.mocks.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\ServerBusinessLogic.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\ServerServiceLayer.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\DataBase.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\ServerBusinessLogic.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\ServerServiceLayer.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\nunit.framework.xml
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\obj\Release\tests.csprojResolveAssemblyReference.cache
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\obj\Release\tests.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\tests\obj\Release\tests.pdb

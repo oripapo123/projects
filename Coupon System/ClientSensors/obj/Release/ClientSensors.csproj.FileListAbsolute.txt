@@ -1,0 +1,5 @@
+C:\Class Homework\2b\ANAL\couponsmadafaka\ClientSensors\obj\Release\ClientSensors.csprojResolveAssemblyReference.cache
+C:\Class Homework\2b\ANAL\couponsmadafaka\ClientSensors\bin\Release\ClientSensors.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\ClientSensors\bin\Release\ClientSensors.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\ClientSensors\obj\Release\ClientSensors.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\ClientSensors\obj\Release\ClientSensors.pdb

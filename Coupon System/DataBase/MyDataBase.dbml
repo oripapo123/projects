@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="analysis_design" Class="MyDataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\analysis_design.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="DataBase.Properties.Settings" SettingsPropertyName="analysis_designConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Business_Owners" Member="Business_Owners">
+    <Type Name="Business_Owner">
+      <Column Name="first_name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="gender" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="birth_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="Business_Owner_Businesses_of_Business_Owner" Member="Businesses_of_Business_Owners" ThisKey="username" OtherKey="Business_Owner" Type="Businesses_of_Business_Owner" />
+    </Type>
+  </Table>
+  <Table Name="dbo.System_Managers" Member="System_Managers">
+    <Type Name="System_Manager">
+      <Column Name="first_name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="gender" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="birth_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Businesses" Member="Businesses">
+    <Type Name="Business">
+      <Column Name="business_name" Type="System.String" DbType="NChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Business_Businesses_of_Business_Owner" Member="Businesses_of_Business_Owner" ThisKey="business_name" OtherKey="Business" Type="Businesses_of_Business_Owner" Cardinality="One" />
+      <Association Name="Business_Coupons_for_Business" Member="Coupons_for_Businesses" ThisKey="business_name" OtherKey="Business" Type="Coupons_for_Business" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Businesses_of_Business_Owners" Member="Businesses_of_Business_Owners">
+    <Type Name="Businesses_of_Business_Owner">
+      <Column Name="Business_Owner" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Business" Type="System.String" DbType="NChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Business_Owner_Businesses_of_Business_Owner" Member="Business_Owner1" ThisKey="Business_Owner" OtherKey="username" Type="Business_Owner" IsForeignKey="true" />
+      <Association Name="Business_Businesses_of_Business_Owner" Member="Business1" ThisKey="Business" OtherKey="business_name" Type="Business" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clients" Member="Clients">
+    <Type Name="Client">
+      <Column Name="first_name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="gender" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="birth_day" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="Client_Coupons_of_Client" Member="Coupons_of_Clients" ThisKey="username" OtherKey="Client" Type="Coupons_of_Client" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Coupons" Member="Coupons">
+    <Type Name="Coupon">
+      <Column Name="categoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Serial_Number" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="isApproved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="orginialPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="discountedPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="rating" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="lastDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="couponCategory" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Coupon_Coupons_for_Business" Member="Coupons_for_Businesses" ThisKey="Serial_Number" OtherKey="Coupon" Type="Coupons_for_Business" />
+      <Association Name="Coupon_Coupons_of_Client" Member="Coupons_of_Clients" ThisKey="Serial_Number" OtherKey="Coupon_Serial_Number" Type="Coupons_of_Client" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Coupons_for_Businesses" Member="Coupons_for_Businesses">
+    <Type Name="Coupons_for_Business">
+      <Column Name="Business" Type="System.String" DbType="NChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Coupon" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Business_Coupons_for_Business" Member="Business1" ThisKey="Business" OtherKey="business_name" Type="Business" IsForeignKey="true" />
+      <Association Name="Coupon_Coupons_for_Business" Member="Coupon1" ThisKey="Coupon" OtherKey="Serial_Number" Type="Coupon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Coupons_of_Clients" Member="Coupons_of_Clients">
+    <Type Name="Coupons_of_Client">
+      <Column Name="Client" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Coupon_Serial_Number" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Client_Coupons_of_Client" Member="Client1" ThisKey="Client" OtherKey="username" Type="Client" IsForeignKey="true" />
+      <Association Name="Coupon_Coupons_of_Client" Member="Coupon" ThisKey="Coupon_Serial_Number" OtherKey="Serial_Number" Type="Coupon" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
