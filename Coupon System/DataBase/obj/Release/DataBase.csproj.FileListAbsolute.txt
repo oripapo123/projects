@@ -1,0 +1,8 @@
+C:\Class Homework\2b\ANAL\couponsmadafaka\DataBase\bin\Release\DataBase.dll.config
+C:\Class Homework\2b\ANAL\couponsmadafaka\DataBase\bin\Release\DataBase.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\DataBase\bin\Release\DataBase.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\DataBase\obj\Release\DataBase.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\DataBase\obj\Release\DataBase.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\DataBase\bin\Release\analysis_design.mdf
+C:\Class Homework\2b\ANAL\couponsmadafaka\DataBase\bin\Release\analysis_design_log.ldf
+C:\Class Homework\2b\ANAL\couponsmadafaka\DataBase\obj\Release\DataBase.csprojResolveAssemblyReference.cache

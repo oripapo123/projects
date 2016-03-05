@@ -1,0 +1,29 @@
+﻿<Window x:Class="GUI.CouponSearch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CouponSearch" Height="350" Width="525"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Height="27" Margin="10,285,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_1"/>
+
+        <DataGrid Name="CouponGrid" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="191" Margin="0,89,0,0" VerticalAlignment="Top" Width="509" SelectionChanged="CouponGrid_SelectionChanged"/>
+        <Button Content="Search" HorizontalAlignment="Left" Height="24" Margin="407,54,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+        <Button Name ="Order" Content="Order" HorizontalAlignment="Left" Height="24" Margin="407,13,0,0" VerticalAlignment="Top" Width="74" Click="Order_Click"/>
+        <TextBox Name="Cat" HorizontalAlignment="Left" Height="25" Margin="285,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <TextBox Name="MaxPrice" HorizontalAlignment="Left" Height="25" Margin="285,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
+        <TextBox Name="MinPrice" HorizontalAlignment="Left" Height="25" Margin="285,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
+        <TextBox Name ="SNumber" HorizontalAlignment="Left" Height="25" Margin="114,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
+        <TextBox Name ="CatID" HorizontalAlignment="Left" Height="25" Margin="114,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <ComboBox Name ="Rating" HorizontalAlignment="Left" Height="22" Margin="114,62,0,0" VerticalAlignment="Top" Width="82" Loaded="ComboBox_Loaded"
+	    SelectionChanged="ComboBox_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="232,62,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="232,38,0,0" TextWrapping="Wrap" Text="maxPrice" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="234,13,0,0" TextWrapping="Wrap" Text="minPrice" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,62,0,0" TextWrapping="Wrap" Text="Rating" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,38,0,0" TextWrapping="Wrap" Text="Serial Number" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,13,0,0" TextWrapping="Wrap" Text="CategoryID" VerticalAlignment="Top"/>
+        <Button Name="GPS" Content="Search By Gps" HorizontalAlignment="Left" Height="27" Margin="387,285,0,0" VerticalAlignment="Top" Width="94" Click="GPS_Click"/>
+
+    </Grid>
+</Window>

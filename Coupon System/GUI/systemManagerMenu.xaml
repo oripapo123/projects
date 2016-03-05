@@ -1,0 +1,21 @@
+﻿<Window x:Class="GUI.systemManagerMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="systemManagerMenu" Height="350" Width="525"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+
+        <Label Name="header" Content="Welcome: " HorizontalAlignment="Left" Height="30" Margin="0,10,0,0" VerticalAlignment="Top" Width="282"/>
+        <Button Content="Change Password" HorizontalAlignment="Left" Height="30" Margin="362,233,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+        <Button Content="Create coupons" HorizontalAlignment="Left" Height="30" Margin="362,203,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_3"/>
+        <Button Content="Search for coupons" HorizontalAlignment="Left" Height="30" Margin="362,173,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_2"/>
+        <Button Content="Approve coupon" HorizontalAlignment="Left" Height="30" Margin="362,143,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_4"/>
+        <Button Content="Add business" HorizontalAlignment="Left" Height="30" Margin="362,114,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_5"/>
+        <Button Content="Remove/edit business" HorizontalAlignment="Left" Height="30" Margin="362,84,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_6"/>
+        <Button Content="New buissnes owner" HorizontalAlignment="Left" Height="30" Margin="362,54,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_1"/>
+        <!--1.3.1-->
+        <Button Content="Back" HorizontalAlignment="Left" Height="27" Margin="10,285,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_7"/>
+    </Grid>
+</Window>

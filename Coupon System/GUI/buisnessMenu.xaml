@@ -1,0 +1,14 @@
+﻿<Window x:Class="GUI.buisnessMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="buisnessMenu" Height="350" Width="525"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Height="27" Margin="10,285,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_2"/>
+        <Button Content="Add coupon" HorizontalAlignment="Left" Height="25" Margin="367,248,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click_1"/>
+        <Button Content="business' coupons" HorizontalAlignment="Left" Height="28" Margin="367,220,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>

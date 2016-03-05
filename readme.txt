@@ -1,4 +1,6 @@
 My own projects.
-No source code, only finished work. Source code can be given upon request.
+Source code included.
+
+Each project includes a short readme file about it.
 
 Last updated: March 5th, 2016.

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\tests.dll" total="20" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-07-20" time="12:42:23">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="ORI-PC" user="Ori" user-domain="Ori-PC" />
+  <culture-info current-culture="he-IL" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Class Homework\2b\ANAL\couponsmadafaka\tests\bin\Release\tests.dll" executed="True" result="Success" success="True" time="3.613" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="tests" executed="True" result="Success" success="True" time="3.568" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Tests" executed="True" result="Success" success="True" time="3.563" asserts="0">
+            <results>
+              <test-case name="tests.Tests.addBusiness" executed="True" result="Success" success="True" time="2.212" asserts="1" />
+              <test-case name="tests.Tests.addBusinessOwner" executed="True" result="Success" success="True" time="0.057" asserts="1" />
+              <test-case name="tests.Tests.addClient" executed="True" result="Success" success="True" time="0.026" asserts="1" />
+              <test-case name="tests.Tests.addCoupon" executed="True" result="Success" success="True" time="0.054" asserts="1" />
+              <test-case name="tests.Tests.addManager" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+              <test-case name="tests.Tests.bEditBusiness" executed="True" result="Success" success="True" time="0.188" asserts="1" />
+              <test-case name="tests.Tests.bEditClient" executed="True" result="Success" success="True" time="0.051" asserts="1" />
+              <test-case name="tests.Tests.bEditManager" executed="True" result="Success" success="True" time="0.054" asserts="1" />
+              <test-case name="tests.Tests.checkName" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+              <test-case name="tests.Tests.countBusinessOwners" executed="True" result="Success" success="True" time="0.094" asserts="1" />
+              <test-case name="tests.Tests.countCoupons" executed="True" result="Success" success="True" time="0.029" asserts="1" />
+              <test-case name="tests.Tests.deleteBusiness" executed="True" result="Success" success="True" time="0.098" asserts="1" />
+              <test-case name="tests.Tests.deleteBusinessOwner" executed="True" result="Success" success="True" time="0.061" asserts="1" />
+              <test-case name="tests.Tests.deleteClient" executed="True" result="Success" success="True" time="0.018" asserts="1" />
+              <test-case name="tests.Tests.deleteCoupon" executed="True" result="Success" success="True" time="0.053" asserts="1" />
+              <test-case name="tests.Tests.deleteManager" executed="True" result="Success" success="True" time="0.024" asserts="1" />
+              <test-case name="tests.Tests.getName" executed="True" result="Success" success="True" time="0.125" asserts="1" />
+              <test-case name="tests.Tests.getPassword" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+              <test-case name="tests.Tests.getUserName" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+              <test-case name="tests.Tests.getUserType" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

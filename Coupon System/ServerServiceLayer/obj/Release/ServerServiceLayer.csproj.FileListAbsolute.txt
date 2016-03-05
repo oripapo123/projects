@@ -1,0 +1,11 @@
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\bin\Release\ServerServiceLayer.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\bin\Release\analysis_design.mdf
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\bin\Release\analysis_design_log.ldf
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\bin\Release\DataBase.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\bin\Release\ServerBusinessLogic.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\bin\Release\ServerBusinessLogic.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\bin\Release\DataBase.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\obj\Release\ServerServiceLayer.csprojResolveAssemblyReference.cache
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\obj\Release\ServerServiceLayer.dll
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\obj\Release\ServerServiceLayer.pdb
+C:\Class Homework\2b\ANAL\couponsmadafaka\ServerServiceLayer\bin\Release\ServerServiceLayer.pdb

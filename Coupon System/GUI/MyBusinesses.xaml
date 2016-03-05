@@ -1,0 +1,14 @@
+﻿<Window x:Class="GUI.MyBusinesses"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MyBusinesses" Height="350" Width="525"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Height="27" Margin="10,285,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_1"/>
+
+        <DataGrid Name="BusinessGrid" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="191" Margin="0,89,0,0" VerticalAlignment="Top" Width="509" SelectionChanged="BusinessGrid_SelectionChanged"/>
+        <Button Content="Show My Businesses" HorizontalAlignment="Left" Height="36" Margin="322,31,0,0" VerticalAlignment="Top" Width="157" Click="Button_Click"/>
+        <Button Name="Expand" Content="Expand" HorizontalAlignment="Left" Height="36" Margin="37,31,0,0" VerticalAlignment="Top" Width="136" Click="Expand_Click"/>
+    </Grid>
+</Window>
